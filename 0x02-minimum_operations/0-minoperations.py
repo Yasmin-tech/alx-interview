@@ -11,6 +11,8 @@ def minOperations(n):
         Given a number n, this method calculates the fewest number of
         operations needed to result in exactly n H characters in the file.
         '''
+    if not isinstance(n, int):
+        return 0
     step = 1
     string = 'H'
     coppied_string = ''
@@ -26,15 +28,18 @@ def minOperations(n):
             string = Paste(coppied_string, string)
             step += 1
             num_operations += 1
+            print(len(string))
         else:
             if n % len(string) == 0:
                 diviser = len(string)
                 coppied_string = CopyAll(string)
                 string = Paste(coppied_string, string)
                 num_operations += 2
+                print(len(string))
             elif len(string) % diviser == 0:
                 string = Paste(coppied_string, string)
                 num_operations += 1
+                print(len(string))
     return num_operations
 
 
