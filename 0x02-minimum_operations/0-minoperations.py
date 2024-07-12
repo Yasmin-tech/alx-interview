@@ -28,18 +28,18 @@ def minOperations(n):
             string = Paste(coppied_string, string)
             step += 1
             num_operations += 1
-            print(len(string))
+            # print(len(string))
         else:
             if n % len(string) == 0:
                 diviser = len(string)
                 coppied_string = CopyAll(string)
                 string = Paste(coppied_string, string)
                 num_operations += 2
-                print(len(string))
+                # print(len(string))
             elif len(string) % diviser == 0:
                 string = Paste(coppied_string, string)
                 num_operations += 1
-                print(len(string))
+                # print(len(string))
     return num_operations
 
 
