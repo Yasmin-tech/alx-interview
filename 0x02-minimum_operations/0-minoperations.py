@@ -36,7 +36,7 @@ def minOperations(n):
                 string = Paste(coppied_string, string)
                 num_operations += 2
                 # print(len(string))
-            elif len(string) % diviser == 0:
+            else:
                 string = Paste(coppied_string, string)
                 num_operations += 1
                 # print(len(string))
