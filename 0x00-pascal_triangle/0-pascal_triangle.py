@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 '''
     Implement a function that returns a list of lists of integers
-    representing the Pascal’s triangle
+    representing the Pascal’s triangle.
 '''
 
 
