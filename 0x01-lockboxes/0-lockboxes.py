@@ -8,8 +8,10 @@ def canUnlockAll(boxes):
 
     if not boxes:
         return False
-    if not boxes[0]:
+    if not boxes[0] and len(boxes) > 1:
         return False
+    else:
+        return True
 
     queue = [0]
 
