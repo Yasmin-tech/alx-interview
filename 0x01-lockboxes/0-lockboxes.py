@@ -12,7 +12,7 @@ def canUnlockAll(boxes):
         if box not in opened:
             opened.add(box)
             for key in boxes[box]:
-                if key < len(boxes):
+                if key < len(boxes) and key not in opened:
                     queue.append(key)
 
     return len(opened) == len(boxes)
