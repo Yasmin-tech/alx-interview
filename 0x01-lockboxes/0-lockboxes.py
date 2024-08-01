@@ -7,7 +7,7 @@ def canUnlockAll(boxes):
     opened = set()
 
     if not boxes:
-        return False
+        return True
     if not boxes[0] and len(boxes) > 1:
         return False
     else:
