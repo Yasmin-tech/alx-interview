@@ -5,6 +5,12 @@
 
 def canUnlockAll(boxes):
     opened = set()
+
+    if not boxes:
+        return False
+    if not boxes[0]:
+        return False
+
     queue = [0]
 
     while queue:
