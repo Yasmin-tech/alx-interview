@@ -10,7 +10,7 @@ def canUnlockAll(boxes):
         return True
     if not boxes[0] and len(boxes) > 1:
         return False
-    else:
+    elif not boxes[0]:
         return True
 
     queue = [0]
